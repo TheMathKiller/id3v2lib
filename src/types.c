@@ -16,7 +16,8 @@
 ID3v2_tag* new_tag()
 {
     ID3v2_tag* tag = (ID3v2_tag*) malloc(sizeof(ID3v2_tag));
-    tag->tag_header = new_header();
+    //here should be omitted
+    //tag->tag_header = new_header();
     tag->frames = new_frame_list();
     return tag;
 }
